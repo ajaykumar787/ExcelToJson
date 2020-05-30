@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0af798b-3ba8-4618-bd17-2a3ad77cefb3" name="Default Changelist" comment="" />
+    <list default="true" id="d0af798b-3ba8-4618-bd17-2a3ad77cefb3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customers.json" beforeDir="false" afterPath="$PROJECT_DIR$/customers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/convertexcel2json/ConvertExcel2Json.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/convertexcel2json/ConvertExcel2Json.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/convertexcel2json/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/convertexcel2json/Info.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cItr6zOHtFHU90qLTUV9uD50Pv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -74,25 +83,74 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1590229125820" />
-    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1590230481072">
+    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1590856316428">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590230481072" />
-    <state width="1323" height="227" key="GridCell.Tab.0.bottom" timestamp="1590233957617">
+    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590856316428" />
+    <state width="434" height="438" key="DebuggerActiveHint" timestamp="1590861458239">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590233957617" />
-    <state width="1323" height="227" key="GridCell.Tab.0.center" timestamp="1590233957617">
+    <state width="434" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1590861458239" />
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom" timestamp="1590862538853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590233957617" />
-    <state width="1323" height="227" key="GridCell.Tab.0.left" timestamp="1590233957617">
+    <state width="1323" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590862538853" />
+    <state width="1323" height="99" key="GridCell.Tab.0.center" timestamp="1590862538852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590233957617" />
-    <state width="1323" height="227" key="GridCell.Tab.0.right" timestamp="1590233957617">
+    <state width="1323" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590862538852" />
+    <state width="1323" height="99" key="GridCell.Tab.0.left" timestamp="1590862538852">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="227" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590233957617" />
+    <state width="1323" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590862538852" />
+    <state width="1323" height="99" key="GridCell.Tab.0.right" timestamp="1590862538853">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590862538853" />
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1590861688078">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590861688078" />
+    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1590861688078">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1590861688078" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1590861688077">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1590861688077" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1590861688078">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1590861688078" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1590855932247">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590855932247" />
+    <state x="254" y="103" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1590861508131">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="254" y="103" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1590861508131" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/convertexcel2json/ConvertExcel2Json.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/convertexcel2json/ConvertExcel2Json.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/grokonez/convertexcel2json/ConvertExcel2Json.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

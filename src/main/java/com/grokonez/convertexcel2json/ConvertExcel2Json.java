@@ -28,7 +28,7 @@ public class ConvertExcel2Json {
   
   public static void main(String[] args) {
     // Step 1: Read Excel File into Java List Objects
-    List<Customer> customers = readExcelFile(readFileFromClasspath());
+    Customer customers = readExcelFile(readFileFromClasspath());
     
       // Step 2: Write Java List Objects to JSON File
       writeObjects2JsonFile(customers, "customers.json");
@@ -42,7 +42,7 @@ public class ConvertExcel2Json {
    * @param filePath
    * @return
    */
-  private static List<Customer> readExcelFile(File filePath){
+  private static Customer readExcelFile(File filePath){
     try {
       FileInputStream excelFile = new FileInputStream(filePath);
         Workbook workbook = new XSSFWorkbook(excelFile);
@@ -50,24 +50,40 @@ public class ConvertExcel2Json {
         Sheet sheet = workbook.getSheet("Customers");
         Iterator<Row> rows = sheet.iterator();
         
-        List<Customer> lstCustomers = new ArrayList<Customer>();
-        
+        //Customer lstCustomers = new Customer();
+        Customer cust = new Customer();
+        Info info = new Info();
+        List<Tests> testsList = new ArrayList<Tests>();
         int rowNumber = 0;
         while (rows.hasNext()) {
           Row currentRow = rows.next();
-          
+
           // skip header
           if(rowNumber == 0) {
+            Iterator<Cell> cellsInRow = currentRow.iterator();
+            int cellIndex = 0;
+            while (cellsInRow.hasNext()) {
+              Cell currentCell = cellsInRow.next();
+              if(cellIndex==0) { // Summary
+                info.setSummary(currentCell.getStringCellValue());
+              } else if(cellIndex==1) { // Wordings
+                info.setWordings(currentCell.getStringCellValue());
+              } else if(cellIndex==2) { // Lesson
+                info.setLesson(currentCell.getStringCellValue());
+              } else if(cellIndex==3) { // StartDay
+                info.setStartDay(currentCell.getStringCellValue());
+              } else if(cellIndex==4) { // EndDay
+                info.setEndDay(currentCell.getStringCellValue());
+              }
+              cellIndex++;
+            }
+            cust.setInfo(info);
             rowNumber++;
-            continue;
+            //continue;
           }
           
           Iterator<Cell> cellsInRow = currentRow.iterator();
- 
-          Customer cust = new Customer();
-          Info info = new Info();
           Tests tests = new Tests();
-          List<Tests> testsList = new ArrayList<Tests>();
 
           int cellIndex = 0;
           int rowIndex = 0;
@@ -84,30 +100,24 @@ public class ConvertExcel2Json {
               cust.setAge((int) currentCell.getNumericCellValue());
             } else*/
             if(cellIndex==0) { // Summary
-              info.setSummary(currentCell.getStringCellValue());
             } else if(cellIndex==1) { // Wordings
-              info.setWordings(currentCell.getStringCellValue());
             } else if(cellIndex==2) { // Lesson
-              info.setLesson(currentCell.getStringCellValue());
             } else if(cellIndex==3) { // StartDay
-              info.setStartDay(currentCell.getStringCellValue());
               tests.setStartDay(currentCell.getStringCellValue());
             } else if(cellIndex==4) { // EndDay
-              info.setEndDay(currentCell.getStringCellValue());
               tests.setEndDay(currentCell.getStringCellValue());
             }
             cellIndex++;
           }
           testsList.add(tests);
-          cust.setInfo(info);
-          cust.setTests(testsList);
-          lstCustomers.add(cust);
         }
+        cust.setTests(testsList);
+        //lstCustomers.add(cust);
         
         // Close WorkBook
         workbook.close();
         
-        return lstCustomers;
+        return cust;
         } catch (IOException e) {
           throw new RuntimeException("FAIL! -> message = " + e.getMessage());
         }
@@ -120,7 +130,7 @@ public class ConvertExcel2Json {
      * @param customers
      * @param pathFile
      */
-    private static void writeObjects2JsonFile(List<Customer> customers, String pathFile) {
+    private static void writeObjects2JsonFile(Customer customers, String pathFile) {
         ObjectMapper mapper = new ObjectMapper();
  
         File file = new File(pathFile);

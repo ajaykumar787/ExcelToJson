@@ -1,11 +1,15 @@
 package com.grokonez.convertexcel2json;
 
+import java.util.List;
+
 public class Info {
     private String summary;
     private String wordings;
     private String lesson;
     private String startDay;
     private String endDay;
+
+    //private List<Tests> tests;
 
     public Info() {
     }
@@ -57,4 +61,12 @@ public class Info {
     public void setEndDay(String endDay) {
         this.endDay = endDay;
     }
+
+    /*public List<Tests> getTests() {
+        return tests;
+    }
+
+    public void setTests(List<Tests> tests) {
+        this.tests = tests;
+    }*/
 }
